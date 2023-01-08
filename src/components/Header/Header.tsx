@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header header__background">
       <div className="header__content container">
         <div className="header__bar">
-          <Logo text="Viva" />
+          <Logo text="Viva " />
 
           <nav className="header__navigation">
             <a href="#">About</a>

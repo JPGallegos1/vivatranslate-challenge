@@ -1,0 +1,27 @@
+@use "variables" as v;
+
+h1,
+h2,
+h3 {
+  margin: 0 0 v.$gap-5 0;
+  font-family: v.$roboto;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+p {
+  color: v.$black-100;
+  font-size: 1.6rem;
+  line-height: 2;
+}

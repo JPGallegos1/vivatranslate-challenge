@@ -17,11 +17,6 @@ body {
   background-color: v.$blue-50;
 }
 
-p {
-  color: v.$black-100;
-  font-size: 2rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -29,24 +24,6 @@ a {
 img {
   max-width: 100%;
   display: block;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 v.$gap-5 0;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3.6rem;
-}
-
-h3 {
-  font-size: 3.2rem;
 }
 
 .container {
