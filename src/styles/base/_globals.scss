@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  font-family: v.$roboto;
+  font-family: v.$secundary-font;
   font-size: 1.6rem;
-  background-color: v.$blue-50;
+  background-color: v.$purple-50;
 }
 
 a {
@@ -24,6 +24,12 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {

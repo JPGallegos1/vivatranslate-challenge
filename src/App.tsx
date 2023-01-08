@@ -1,4 +1,6 @@
 import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Icons from "./components/About/Icons";
 
 function App() {
   return (
@@ -6,15 +8,16 @@ function App() {
       <Header />
 
       <main className="container main-content">
-        <section className="about text-center">
-          <h2>Meet the AI revolution</h2>
+        <About
+          spanText="Know more"
+          text="Viva Translate is an AI meeting translator that helps break language barriers in the
+            workplace. With real-time translation capabilities, this tool allows you to communicate
+            effectively with coworkers, regardless of the language they speak. No more awkward
+            misunderstandings or language mix-ups."
+          title="About us"
+        />
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aperiam natus doloremque
-            sequi dolore, nesciunt doloribus, aliquid consequatur voluptatem ipsum ratione. Pariatur
-            veniam necessitatibus architecto quas ea in quasi assumenda.
-          </p>
-        </section>
+        <section className="testomonies" />
       </main>
     </>
   );
