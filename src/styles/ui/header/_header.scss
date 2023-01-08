@@ -5,16 +5,8 @@
   padding: 5rem 0;
   position: relative;
 
-  @include m.phone {
-    padding: 4rem 0;
-  }
-
   @include m.tablet {
-    padding: 3rem 0;
-  }
-
-  @include m.desktop {
-    padding: 4rem 0;
+    min-height: 60rem;
   }
 
   &::before {
@@ -31,40 +23,24 @@
   .header__content {
     position: relative;
   }
-}
 
-.header__bar {
-  .header__logo {
-    p {
-      font-weight: 600;
-      background: linear-gradient(
-        to right,
-        v.$blue-100 20%,
-        v.$violet-100 40%,
-        v.$violet-100 60%,
-        v.$blue-100 80%
-      );
-      background-size: 200% auto;
-
-      color: #000;
-      background-clip: text;
-      text-fill-color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      animation: shine 5s linear infinite;
-      @keyframes shine {
-        to {
-          background-position: 200% center;
-        }
+  .header__heading {
+    position: relative;
+    h1 {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 5rem;
+      @include m.tablet {
+        margin-top: 10rem;
       }
     }
   }
 }
 
 .header__background {
-  background-image: url("/public/deepmind.webp");
+  background-image: url("/public/meeting-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
 }

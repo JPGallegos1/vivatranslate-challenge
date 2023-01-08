@@ -1,0 +1,44 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header__logo {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+
+  p {
+    font-weight: 700;
+    color: v.$white;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include m.tablet {
+      background: linear-gradient(
+        to right,
+        v.$blue-100 20%,
+        v.$purple-100 40%,
+        v.$purple-100 60%,
+        v.$blue-100 80%
+      );
+      background-size: 200% auto;
+      color: #000;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 5s linear infinite;
+
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+    }
+  }
+}
