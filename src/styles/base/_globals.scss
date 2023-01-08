@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$roboto;
+}
+
+p {
+  color: v.$black-100;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 v.$gap-5 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
