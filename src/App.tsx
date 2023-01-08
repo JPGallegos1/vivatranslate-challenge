@@ -8,16 +8,24 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
-        <div className="header__logo">
-          <img alt="vite" src="/vite.svg" />
+      <header className="header header__background">
+        <div className="header__content container">
+          <div className="header__bar">
+            <div className="header__logo">
+              <p>Viva Translate</p>
+            </div>
+
+            <nav className="header__navigation">
+              <a href="#">About</a>
+              <a href="#">Join</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
         </div>
-        <nav className="header__navigation">
-          <a href="#">A</a>
-          <a href="#">B</a>
-          <a href="#">C</a>
-          <a href="#">D</a>
-        </nav>
+
+        <div className="header__heading">
+          <h1>we are breaking langueage's barriers</h1>
+        </div>
       </header>
     </div>
   );

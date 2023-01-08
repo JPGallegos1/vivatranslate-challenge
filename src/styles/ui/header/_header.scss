@@ -1,0 +1,70 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+
+  @include m.phone {
+    padding: 4rem 0;
+  }
+
+  @include m.tablet {
+    padding: 3rem 0;
+  }
+
+  @include m.desktop {
+    padding: 4rem 0;
+  }
+
+  &::before {
+    content: "";
+    background-color: v.$black-100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+
+  .header__content {
+    position: relative;
+  }
+}
+
+.header__bar {
+  .header__logo {
+    p {
+      font-weight: 600;
+      background: linear-gradient(
+        to right,
+        v.$blue-100 20%,
+        v.$violet-100 40%,
+        v.$violet-100 60%,
+        v.$blue-100 80%
+      );
+      background-size: 200% auto;
+
+      color: #000;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      animation: shine 5s linear infinite;
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+    }
+  }
+}
+
+.header__background {
+  background-image: url("/public/deepmind.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
