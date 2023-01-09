@@ -3,6 +3,7 @@ import About from "./components/About/About";
 import Testimonies from "./components/Testimonies/Testimonies";
 import Steps from "./components/Steps/Steps";
 import Join from "./components/Join/Join";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Testimonies />
 
       <Join />
+
+      <Footer />
     </>
   );
 }
