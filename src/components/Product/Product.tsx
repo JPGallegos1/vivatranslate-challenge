@@ -11,7 +11,7 @@ export default function Product() {
 
   return (
     <section className="product" id="product">
-      <img alt="step section with wave image" className="steps__wave container" src={Wave} />
+      <img alt="step section with wave image" className="product__wave container" src={Wave} />
 
       <Title spanText={t("product.span")} title={t("product.title")} />
 
