@@ -1,7 +1,15 @@
 import {HashLink} from "react-router-hash-link";
 import {useTranslation} from "react-i18next";
 
+import SpainIcon from "../../assets/icons/icon-spain.webp";
+import UsaIcon from "../../assets/icons/icon-usa.webp";
+
 import Logo from "./Logo";
+
+const lngs: any = {
+  en: {nativeName: "English"},
+  es: {nativeName: "Español"},
+};
 
 export default function Header() {
   const {t, i18n} = useTranslation();
@@ -29,6 +37,16 @@ export default function Header() {
               {t("navigation.join")}
             </HashLink>
           </nav>
+
+          <div className="header__flags">
+            <div role="button" onClick={() => i18n.changeLanguage("es")}>
+              <img alt="Span flag" src={SpainIcon} />
+            </div>
+
+            <div role="button" onClick={() => i18n.changeLanguage("en")}>
+              <img alt="USA flag" src={UsaIcon} />
+            </div>
+          </div>
         </div>
       </div>
 
