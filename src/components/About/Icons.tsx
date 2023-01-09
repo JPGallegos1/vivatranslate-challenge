@@ -1,7 +1,8 @@
+import {useTranslation} from "react-i18next";
+
 import MeetIcon from "../../assets/icons/meet-icon.webp";
 import BrainIcon from "../../assets/icons/brain-icon.webp";
 import GlobalIcon from "../../assets/icons/global-icon.webp";
-
 export interface Icons {
   id: number;
   name: string;
@@ -9,6 +10,8 @@ export interface Icons {
 }
 
 export default function Icons() {
+  const {t} = useTranslation();
+
   const icons: Icons[] = [
     {
       id: 1,
@@ -33,7 +36,7 @@ export default function Icons() {
         {icons.map((i: Icons) => (
           <li key={i.id} className="text-center">
             <img alt={i.name} src={i.icon} />
-            <p>{i.name}</p>
+            <p>{t(`about.${i.name}`)}</p>
           </li>
         ))}
       </ul>

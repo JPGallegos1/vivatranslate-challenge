@@ -8,6 +8,8 @@ import "@fontsource/roboto";
 import "@fontsource/raleway";
 import "@fontsource/bona-nova";
 
+import "./i18n";
+
 const router = createBrowserRouter([
   {
     path: "/",

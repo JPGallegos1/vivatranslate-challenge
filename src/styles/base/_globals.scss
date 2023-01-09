@@ -32,6 +32,10 @@ ul {
   margin: 0;
 }
 
+div[role="button"] {
+  cursor: pointer;
+}
+
 .container {
   width: 95%;
   max-width: 120rem;

@@ -36,6 +36,10 @@
       }
     }
   }
+
+  &__flags {
+    display: flex;
+  }
 }
 
 .header__background {

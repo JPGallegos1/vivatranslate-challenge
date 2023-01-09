@@ -1,3 +1,5 @@
+import {useTranslation} from "react-i18next";
+
 import Wave from "../../assets/images/wave.svg";
 import FirstStep from "../../assets/images/step-1.avif";
 import SecondStep from "../../assets/images/step-2.avif";
@@ -5,11 +7,13 @@ import ThirdStep from "../../assets/images/step-3.avif";
 import Title from "../Title";
 
 export default function Product() {
+  const {t} = useTranslation();
+
   return (
     <section className="product" id="product">
-      <img alt="step section with wave image" className="steps__wave container" src={Wave} />
+      <img alt="step section with wave image" className="product__wave container" src={Wave} />
 
-      <Title spanText="Product" title="How it works" />
+      <Title spanText={t("product.span")} title={t("product.title")} />
 
       <div className="product__grid container">
         <div className="product__step">
@@ -17,31 +21,25 @@ export default function Product() {
             <img alt="step one of how to use the tool" src={FirstStep} />
           </div>
 
-          <h3 className="product__text text-center">Add Viva to Chrome for free</h3>
+          <h3 className="product__text text-center">{t("product.card.first.title")}</h3>
 
-          <p className="text-center">
-            Anchor the Viva extension for easy access to all our functions.{" "}
-          </p>
+          <p className="text-center">{t("product.card.first.description")}</p>
         </div>
         <div className="product__step">
           <div className="product__image--container">
             <img alt="step one of how to use the tool" src={SecondStep} />
           </div>
-          <h3 className="product__text text-center">Join a Google Meets call</h3>
+          <h3 className="product__text text-center">{t("product.card.second.title")}</h3>
 
-          <p className="text-center">
-            Start an instant meeting or make a call with a colleague to try Viva.{" "}
-          </p>
+          <p className="text-center">{t("product.card.second.description")}</p>
         </div>
         <div className="product__step">
           <div className="product__image--container">
             <img alt="step one of how to use the tool" src={ThirdStep} />
           </div>
-          <h3 className="product__text text-center">Experience the magic</h3>
+          <h3 className="product__text text-center">{t("product.card.third.title")}</h3>
 
-          <p className="text-center">
-            Feel confident in multilingual meetings with real-time transcription and translation.{" "}
-          </p>
+          <p className="text-center">{t("product.card.third.description")}</p>
         </div>
       </div>
     </section>
