@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import Icons from "./components/About/Icons";
+import Testimonies from "./components/Testimonies/Testimonies";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           title="About us"
         />
 
-        <section className="testomonies" />
+        <Testimonies />
       </main>
     </>
   );
