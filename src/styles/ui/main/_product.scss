@@ -1,7 +1,7 @@
 @use "../../base/mixins" as m;
 @use "../../base/variables" as v;
 
-.steps {
+.product {
   background-color: v.$purple-50;
   margin-bottom: calc(v.$gap-5 * 4);
 

@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Testimonies from "./components/Testimonies/Testimonies";
-import Steps from "./components/Steps/Steps";
+import Product from "./components/Product/Product";
 import Join from "./components/Join/Join";
 import Footer from "./components/Footer/Footer";
 
@@ -21,7 +21,7 @@ function App() {
         />
       </main>
 
-      <Steps />
+      <Product />
 
       <Testimonies />
 

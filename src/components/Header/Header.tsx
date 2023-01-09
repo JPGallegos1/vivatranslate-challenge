@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
+
 import Logo from "./Logo";
 
 export default function Header() {
@@ -8,9 +11,19 @@ export default function Header() {
           <Logo text="Viva " />
 
           <nav className="header__navigation">
-            <a href="#">About</a>
-            <a href="#">Join</a>
-            <a href="#">Contact</a>
+            <Link to="/">Home</Link>
+            <HashLink smooth to="/#about">
+              About
+            </HashLink>
+            <HashLink smooth to="/#product">
+              Product
+            </HashLink>
+            <HashLink smooth to="/#testimonies">
+              Testimonies
+            </HashLink>
+            <HashLink smooth to="/#joinus">
+              Join
+            </HashLink>
           </nav>
         </div>
       </div>
