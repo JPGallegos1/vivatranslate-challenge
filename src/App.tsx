@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Testimonies from "./components/Testimonies/Testimonies";
 import Steps from "./components/Steps/Steps";
+import Join from "./components/Join/Join";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
 
       <Steps />
 
-      {/* <Testimonies /> */}
+      <Testimonies />
+
+      <Join />
     </>
   );
 }

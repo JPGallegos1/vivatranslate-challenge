@@ -2,7 +2,7 @@
 @use "../../base/variables" as v;
 
 .testimonies {
-  padding: v.$gap-5 0;
+  padding: calc(v.$gap-5 * 2) 2rem;
 
   h2 {
     text-align: center;

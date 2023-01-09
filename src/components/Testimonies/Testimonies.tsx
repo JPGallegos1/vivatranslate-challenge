@@ -3,7 +3,7 @@ import {testimonies} from "../../data/testomonies";
 
 export default function Testimonies() {
   return (
-    <section className="testimonies container">
+    <section className="testimonies main-content container">
       <Title spanText="Customers" title="Testimonies" />
 
       <div className="testimonies__grid">

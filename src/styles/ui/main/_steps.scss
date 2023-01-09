@@ -3,7 +3,7 @@
 
 .steps {
   background-color: v.$purple-50;
-  margin-bottom: v.$gap-5;
+  margin-bottom: calc(v.$gap-5 * 4);
 
   &__wave {
     background-color: v.$white;

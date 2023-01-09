@@ -35,7 +35,7 @@ export const testimonies: Testimony[] = [
     name: "India Karn",
     job: "Backend Engineer",
     blockquote:
-      "With Viva Translate, communication across different languages is no longer an issue. This technology can provide real-time translations of conversations during meetings, allowing everyone to understand each other without any misunderstandings",
+      "With Viva Translate, communication across different languages is no longer an issue. This technology can provide real-time translations of conversations during meetings, allowing everyone to understand each other without any misunderstandings. This makes it easier for businesses to operate on a global scale and ensures that everyone is able to contribute and stay up-to-date with the latest developments.",
   },
   {
     id: 4,
