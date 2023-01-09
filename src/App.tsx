@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Testimonies from "./components/Testimonies/Testimonies";
+import Steps from "./components/Steps/Steps";
 
 function App() {
   return (
@@ -16,9 +17,11 @@ function App() {
             misunderstandings or language mix-ups."
           title="About us"
         />
-
-        <Testimonies />
       </main>
+
+      <Steps />
+
+      {/* <Testimonies /> */}
     </>
   );
 }
