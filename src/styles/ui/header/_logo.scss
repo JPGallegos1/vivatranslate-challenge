@@ -1,0 +1,53 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header__logo {
+  position: relative;
+  padding: 15px 20px;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, v.$blue-100, v.$purple-100) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  p {
+    font-weight: 700;
+    color: v.$white;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include m.tablet {
+      background: linear-gradient(
+        to right,
+        v.$blue-100 20%,
+        v.$purple-100 40%,
+        v.$purple-100 60%,
+        v.$blue-100 80%
+      );
+      background-size: 200% auto;
+      color: #000;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 5s linear infinite;
+
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+    }
+  }
+}
