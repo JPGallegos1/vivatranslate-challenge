@@ -1,0 +1,47 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+
+  @include m.tablet {
+    min-height: 60rem;
+  }
+
+  &::before {
+    content: "";
+    background-color: v.$black-100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+
+  .header__content {
+    position: relative;
+  }
+
+  .header__heading {
+    position: relative;
+    h1 {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 5rem;
+      @include m.tablet {
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+.header__background {
+  background-image: url("/src/assets/images/meeting-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

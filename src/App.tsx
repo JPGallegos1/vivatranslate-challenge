@@ -1,25 +1,34 @@
-import {useState} from "react";
-
-import reactLogo from "./assets/react.svg";
-import "./App.scss";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Testimonies from "./components/Testimonies/Testimonies";
+import Steps from "./components/Steps/Steps";
+import Join from "./components/Join/Join";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <header className="header">
-        <div className="header__logo">
-          <img alt="vite" src="/vite.svg" />
-        </div>
-        <nav className="header__navigation">
-          <a href="#">A</a>
-          <a href="#">B</a>
-          <a href="#">C</a>
-          <a href="#">D</a>
-        </nav>
-      </header>
-    </div>
+    <>
+      <Header />
+
+      <main className="container main-content">
+        <About
+          spanText="Know more"
+          text="Viva Translate is an AI meeting translator that helps break language barriers in the
+            workplace. With real-time translation capabilities, this tool allows you to communicate
+            effectively with coworkers, regardless of the language they speak. No more awkward
+            misunderstandings or language mix-ups."
+          title="About us"
+        />
+      </main>
+
+      <Steps />
+
+      <Testimonies />
+
+      <Join />
+
+      <Footer />
+    </>
   );
 }
 
