@@ -1,9 +1,11 @@
-import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
+import {useTranslation} from "react-i18next";
 
 import Logo from "./Logo";
 
 export default function Header() {
+  const {t, i18n} = useTranslation();
+
   return (
     <header className="header header__background">
       <div className="header__content container">
@@ -11,25 +13,27 @@ export default function Header() {
           <Logo text="Viva " />
 
           <nav className="header__navigation">
-            <Link to="/">Home</Link>
+            <HashLink smooth to="/#home">
+              {t("navigation.home")}
+            </HashLink>
             <HashLink smooth to="/#about">
-              About
+              {t("navigation.about")}
             </HashLink>
             <HashLink smooth to="/#product">
-              Product
+              {t("navigation.product")}
             </HashLink>
             <HashLink smooth to="/#testimonies">
-              Testimonies
+              {t("navigation.testimonies")}
             </HashLink>
             <HashLink smooth to="/#joinus">
-              Join
+              {t("navigation.join")}
             </HashLink>
           </nav>
         </div>
       </div>
 
       <div className="header__heading container">
-        <h1>Transcending Language Barriers</h1>
+        <h1>{t("title.h1")}</h1>
       </div>
     </header>
   );

@@ -12,8 +12,11 @@
     "@fontsource/bona-nova": "^4.5.10",
     "@fontsource/raleway": "^4.5.11",
     "@fontsource/roboto": "^4.5.8",
+    "i18next": "^22.4.9",
+    "i18next-browser-languagedetector": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
     "react-router-dom": "^6.6.1",
     "react-router-hash-link": "^2.4.3"
   },

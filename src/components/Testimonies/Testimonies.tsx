@@ -1,10 +1,14 @@
+import {useTranslation} from "react-i18next";
+
 import Title from "../Title";
 import {testimonies} from "../../data/testomonies";
 
 export default function Testimonies() {
+  const {t} = useTranslation();
+
   return (
     <section className="testimonies main-content container" id="testimonies">
-      <Title spanText="Customers" title="Testimonies" />
+      <Title spanText={t("testimonies.span")} title={t("testimonies.title")} />
 
       <div className="testimonies__grid">
         {testimonies.map((testimony) => (
